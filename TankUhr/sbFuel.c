@@ -102,8 +102,7 @@ int main(void)
 		{
 			PORTB |= (1 << PB0);
 			PORTB &= ~((1 << PB1));
-			PORTD &= ~((1 < PD7) | (1 << PD6) | (1 << PD5)(1 << PD4)
-					| (1 << PD3) | (1 << PD2) | (1 << PD1) | (1 << PD0));
+			PORTD &= ~((1 < PD7) | (1 << PD6) | (1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2) | (1 << PD1) | (1 << PD0));
 
 			//PORTD = 0xff;
 			//PORTB = 0x03;
@@ -118,8 +117,7 @@ int main(void)
 
 		else if (result >= 500 && result < 577) {
 			PORTB |= (1 << PB0) | (1 << PB1);
-			PORTD &= ~((1 < PD7) | (1 << PD6) | (1 << PD5)(1 << PD4)
-					| (1 << PD3) | (1 << PD2) | (1 << PD1) | (1 << PD0));
+			PORTD &= ~((1 < PD7) | (1 << PD6) | (1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2) | (1 << PD1) | (1 << PD0));
 
 			//PORTD = 0xff;
 			//PORTB = 0x01;
@@ -132,8 +130,7 @@ int main(void)
 		else if (result >= 577 && result < 633) {
 			PORTB |= (1 << PB0) | (1 << PB1);
 			PORTD |= (1 << PD7);
-			PORTD &= ~((1 << PD6) | (1 << PD5)(1 << PD4) | (1 << PD3) | (1 << PD2)
-					| (1 << PD1) | (1 << PD0));
+			PORTD &= ~((1 << PD6) | (1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2) | (1 << PD1) | (1 << PD0));
 
 			//PORTD = 0xff;
 			//PORTB = 0x00;
@@ -142,8 +139,7 @@ int main(void)
 		else if (result >= 633 && result < 688) {
 			PORTB |= (1 << PB0) | (1 << PB1);
 			PORTD |= (1 << PD7) | (1 << PD6);
-			PORTD &= ~((1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2) | (1 << PD1)
-					| (1 << PD0));
+			PORTD &= ~((1 << PD5) | (1 << PD4) | (1 << PD3) | (1 << PD2) | (1 << PD1) | (1 << PD0));
 			//PORTD = 0x7f;
 			//PORTB = 0x00;
 		}
